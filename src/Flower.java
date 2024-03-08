@@ -12,6 +12,14 @@ public abstract class Flower {
         this.chanceOfGrowth = chanceOfGrowth;
     }
 
+    public double getChanceOfGrowth() {
+        return chanceOfGrowth;
+    }
+
+    public void setChanceOfGrowth(double chanceOfGrowth) {
+        this.chanceOfGrowth = chanceOfGrowth;
+    }
+
     @Override
     public String toString() {
         return "Flower{" +

@@ -3,5 +3,6 @@ public class Main {
         Cow cow = new Cow("cow","Betty", Size.BIG, "feed every 2 minutes");
         System.out.println(cow);
 
+
     }
 }
