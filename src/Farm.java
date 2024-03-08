@@ -11,7 +11,28 @@ public class Farm {
 
 
     public void addFlower(Flower f){
-        flowerField.add(f);
+        if(flowerField.size() < 5){
+            flowerField.add(f);
+        }else {
+            System.out.println("Exceeding capacity");
+        }
+
+    }
+
+    public void addAnimal(Animal a){
+        if(barn.size() < 20){
+            barn.add(a);
+        }else {
+            System.out.println("Exceeding capacity");
+        }
+    }
+
+    public String writeOutFlowers(){
+        StringBuilder s = new StringBuilder();
+        for(int i = 0; i < flowerField.size(); i++){
+            s.append(flowerField.get(i));
+        }
+        return s.toString();
     }
 
     public void waterFlower(){
