@@ -7,6 +7,7 @@ public class Farm {
     private ArrayList<Animal> barn = new ArrayList<>();
     private ArrayList<Flower> flowerField = new ArrayList<>();
     private ArrayList<Flower> harvestedFlowers = new ArrayList<>();
+    private int satisfactionOfAnimals;
     private double sizeOfLand = 100;
 
 
@@ -25,6 +26,10 @@ public class Farm {
         }else {
             System.out.println("Exceeding capacity");
         }
+    }
+
+    public void petAnimal(int index){
+        barn.get(index);
     }
 
     public String writeOutFlowers(){
